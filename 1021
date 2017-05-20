@@ -1,0 +1,49 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vinny
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int a, b, c, d, e, f, res, h, i, j, k, l, g;
+        float A;
+        A = entrada.nextFloat();
+        res = (int) (A * 100);
+        
+        a = res / 10000;
+        b = (res % 10000) / 5000;
+        c = ((res % 10000) % 5000) / 2000;
+        d = (((res % 10000) % 5000) % 2000) / 1000;
+        e = ((((res % 10000) % 5000) % 2000) % 1000) / 500;
+        f = (((((res % 10000) % 5000) % 2000) % 1000) % 500) / 200;
+        g = ((((((res % 10000) % 5000) % 2000) % 1000) % 500) % 200) / 100;
+        h = (((((((res % 10000) % 5000) % 2000) % 1000) % 500) % 200) % 100) / 50;
+        i = ((((((((res % 10000) % 5000) % 2000) % 1000) % 500) % 200) % 100) % 50) / 25;
+        j = (((((((((res % 10000) % 5000) % 2000) % 1000) % 500) % 200) % 100) % 50) % 25) / 10;
+        k = ((((((((((res % 10000) % 5000) % 2000) % 1000) % 500) % 200) % 100) % 50) % 25) % 10) / 5;
+        l = (((((((((((res % 10000) % 5000) % 2000) % 1000) % 500) % 200) % 100) % 50) % 25) % 10) % 5) / 1;
+
+        System.out.printf("NOTAS:\n");
+        System.out.printf("%d nota(s) de R$ 100.00\n", a);
+        System.out.printf("%d nota(s) de R$ 50.00\n", b);
+        System.out.printf("%d nota(s) de R$ 20.00\n", c);
+        System.out.printf("%d nota(s) de R$ 10.00\n", d);
+        System.out.printf("%d nota(s) de R$ 5.00\n", e);
+        System.out.printf("%d nota(s) de R$ 2.00\n", f);
+        System.out.printf("MOEDAS:\n");
+        System.out.printf("%d moeda(s) de R$ 1.00\n", g);
+        System.out.printf("%d moeda(s) de R$ 0.50\n", h);
+        System.out.printf("%d moeda(s) de R$ 0.25\n", i);
+        System.out.printf("%d moeda(s) de R$ 0.10\n", j);
+        System.out.printf("%d moeda(s) de R$ 0.05\n", k);
+        System.out.printf("%d moeda(s) de R$ 0.01\n", l);
+
+    }
+
+}
