@@ -1,0 +1,29 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vinny
+ */
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        int t, d, m, a;
+        
+        t = entrada.nextInt();
+        
+        a = t / 365;
+        m = t % 365 / 30;
+        d = (t % 365) % 30;
+        
+        System.out.printf(a+" ano(s)\n");
+        System.out.printf(m+" mes(es)\n");
+        System.out.printf(d+" dia(s)\n");
+        
+        
+    }
+    
+}
