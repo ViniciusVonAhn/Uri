@@ -1,0 +1,25 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vinny
+ */
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner salario = new Scanner(System.in); 
+        
+        String nome;
+        double fixo, venda;
+        double total;
+        
+        nome = salario.nextLine();
+        fixo = salario.nextDouble();
+        venda = salario.nextDouble();
+        total = fixo+(venda*15)/100;
+        
+          System.out.printf("TOTAL = R$ %.2f\n",total);
+    }
+    
+}
