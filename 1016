@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vinny
+ */
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        int distancia;
+        int tempo;
+        
+        distancia = entrada.nextInt();
+        tempo = distancia * 2;
+        
+        System.out.println(tempo +" minutos");
+        
+        
+    }
+    
+}
