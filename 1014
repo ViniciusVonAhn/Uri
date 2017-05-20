@@ -1,0 +1,25 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vinny
+ */
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        int distancia;
+        double combustivel;
+        double km;
+        
+        distancia = entrada.nextInt();
+        combustivel = entrada.nextDouble();
+        
+        km = distancia / combustivel;
+        
+        System.out.printf("%.3f km/l\n", km);
+    }
+}
