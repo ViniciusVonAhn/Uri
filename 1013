@@ -1,0 +1,32 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vinny
+ */
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        int a;
+        int b;
+        int c;
+        
+        int ab;
+        int abc;
+        
+        a = entrada.nextInt();
+        b = entrada.nextInt();
+        c = entrada.nextInt();
+        
+        ab = (a + b + Math.abs(a - b))/2;
+        abc = (ab + c + Math.abs(ab - c))/2;
+        
+        System.out.println(abc + " eh o maior");
+      
+        
+    }
+}
