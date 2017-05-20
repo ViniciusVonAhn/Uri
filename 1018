@@ -1,0 +1,49 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vinny
+ */
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        int dinheiro, cem, rCem, cinquenta, rCinquenta, vinte, rVinte, dez, rDez, cinco, rCinco, dois, rDois, um;
+
+        dinheiro = entrada.nextInt();
+
+        cem = dinheiro / 100;
+        rCem = dinheiro % 100;
+
+        cinquenta = rCem / 50;
+        rCinquenta = rCem % 50;
+
+        vinte = rCinquenta / 20;
+        rVinte = rCinquenta % 20;
+
+        dez = rVinte / 10;
+        rDez = rVinte % 10;
+
+        cinco = rDez / 5;
+        rCinco = rDez % 5;
+
+        dois = rCinco / 2;
+        rDois = rCinco % 2;
+
+        um = rDois / 1;
+
+        System.out.println(dinheiro);
+        System.out.println(cem + " nota(s) de R$ 100,00");
+        System.out.println(cinquenta + " nota(s) de R$ 50,00");
+        System.out.println(vinte + " nota(s) de R$ 20,00");
+        System.out.println(dez + " nota(s) de R$ 10,00");
+        System.out.println(cinco + " nota(s) de R$ 5,00");
+        System.out.println(dois + " nota(s) de R$ 2,00");
+        System.out.println(um + " nota(s) de R$ 1,00");
+
+    }
+}
