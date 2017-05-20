@@ -1,0 +1,25 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vinny
+ */
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        int h, m, s, n;
+        
+        n = entrada.nextInt();
+        
+        h = n / 3600;
+        m = n % 3600 / 60;
+        s = n % 60;
+        
+        System.out.printf("%d:%d:%d\n", h,m,s);
+        
+    }
+    
+}
