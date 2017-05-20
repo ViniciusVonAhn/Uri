@@ -1,0 +1,19 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+
+
+public class Main {
+
+        public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int A = teclado.nextInt();
+        int B = teclado.nextInt();
+        
+        int multi = A*B;
+        
+       System.out.println("PROD = "+(multi));
+        
+    }
+    
+}
