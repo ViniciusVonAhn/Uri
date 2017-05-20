@@ -1,0 +1,22 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+
+
+public class Main {
+
+        public static void main(String[] args) {
+        Scanner area = new Scanner(System.in);
+        int A = area.nextInt();
+        int B = area.nextInt();
+        int C = area.nextInt();
+        int D = area.nextInt();
+        int media;
+        
+        media = (A*B-C*D);
+        
+        System.out.println("DIFERENCA = "+ media);
+        
+        }
+    
+}
