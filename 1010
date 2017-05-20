@@ -1,0 +1,30 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vinny
+ */
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        int codigo1, quant1, codigo2, quant2;
+        double valor1, valor2, total;
+        
+        codigo1 = entrada.nextInt();
+        quant1 = entrada.nextInt();
+        valor1 = entrada.nextDouble();
+        codigo2 = entrada.nextInt();
+        quant2 = entrada.nextInt();
+        valor2 = entrada.nextDouble();
+        
+        total = (quant1 * valor1) + (quant2 * valor2);
+        
+        System.out.printf("VALOR A PAGAR: R$ %.2f\n", total);
+           
+    }
+    
+}
