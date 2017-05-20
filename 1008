@@ -1,0 +1,23 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Scanner salary = new Scanner(System.in);
+       
+        int NUMBER, HORAS;
+        double SALARIO,TOTAL;
+        
+        NUMBER = salary.nextInt();
+        HORAS = salary.nextInt();
+        SALARIO = salary.nextDouble();
+        TOTAL = HORAS*SALARIO;
+        
+        System.out.println("NUMBER = "+ NUMBER);
+        System.out.printf("SALARY = U$ %.2f\n",TOTAL);
+    }
+
+}
